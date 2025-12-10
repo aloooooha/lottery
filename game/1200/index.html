@@ -133,12 +133,9 @@
             
             table {
                 @media (max-width:767px) {
-                            .col2 {
-                                display: none;
-                            }
-                            .col3 {
-                                display: none;
-                            }
+                    .hide-on-mobile {
+                        display: none;
+                    }                            
                 }
                 &.col-g-1 {
                     col {
@@ -320,10 +317,10 @@
         <tbody>
          <tr>
           <td class="">1등</td>
-          <td id="101" class="text-right number-color">29,427,466,887원</td>
+          <td id="101" class="hide-on-mobile text-right number-color">29,427,466,887원</td>
           <td id="102" class="">13</td>
           <td id="103" class="tar text-right number-color">2,263,651,299원</td>
-          <td>당첨번호 <strong class="length">6개</strong> 숫자일치</td>
+          <td class="hide-on-mobile">당첨번호 <strong class="length">6개</strong> 숫자일치</td>
           <td class="align-middle" rowspan="5">1등<br> 자동10<br> 수동2<br></td>
          </tr>
          <tr>
