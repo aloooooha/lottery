@@ -137,12 +137,12 @@
                         display: none;
                     }                    
                     @each $index, $width in (1: 20px, 2: 20px, 3: 20px, 4: 20px, 5: 20px) {
-                            &.lotto-ball-#{$index} {
-                                width: $width;
-                            }
-                        }        
+                        .lotto-ball-#{$index} {
+                            width: $width;
+                        }
+                    }        
                     @each $index, $size in (1: 1rem, 2: 1rem, 3: 1rem, 4: 1rem, 5: 1rem) {
-                        &.lotto-ball-#{$index} {
+                        .lotto-ball-#{$index} {
                             font-size: $size;
                         }
                     }        
