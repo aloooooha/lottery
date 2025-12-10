@@ -130,6 +130,7 @@
             .number-color {
                 color: #d43301;
             }
+            
             table {
                 &.col-g-1 {
                     col {
@@ -139,7 +140,7 @@
                             }
                         }
 
-                        @include mobile {
+                        @media all and (max-width:767px) {
                             @each $index, $width in (1: 10%, 2: 0%, 3: 25%, 4: 30%, 5: 0%, 6: 0% {
                                 &.col#{$index} {
                                     width: $width;
