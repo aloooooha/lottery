@@ -130,6 +130,26 @@
             .number-color {
                 color: #d43301;
             }
+            table {
+                &.col-g-1 {
+                    col {
+                        @each $index, $width in (1: 20%, 2: 20%, 3: 20%, 4: 20%, 5: 20%) {
+                            &.col#{$index} {
+                                width: $width;
+                            }
+                        }
+
+                        @include mobile {
+                            @each $index, $width in (1: 10%, 2: 0%, 3: 25%, 4: 30%, 5: 0%, 6: 0% {
+                                &.col#{$index} {
+                                    width: $width;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
         </style>
   <script src="/lotto/js/jquery.slim.min.js" async type="text/javascript"></script>
   <script src="/lotto/js/bootstrap.bundle.min.js" async type="text/javascript"></script>
@@ -265,12 +285,12 @@
       <div class="card card-body shadow mt-4">
        <table class="table table-bordered text-center" style="width:100%;">
         <colgroup>
-         <col>
-         <col>
-         <col>
-         <col>
-         <col>
-         <col>
+         <col class="col1">
+         <col class="col2">
+         <col class="col3">
+         <col class="col4">
+         <col class="col5">
+         <col class="col6">
         </colgroup>
         <thead class="thead-light">
          <tr class="">
