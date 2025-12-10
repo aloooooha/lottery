@@ -132,6 +132,14 @@
             }
             
             table {
+                @media (max-width:767px) {
+                            .col2 {
+                                display: none;
+                            }
+                            .col3 {
+                                display: none;
+                            }
+                }
                 &.col-g-1 {
                     col {
                         @each $index, $width in (1: 20%, 2: 20%, 3: 20%, 4: 20%, 5: 20%) {
