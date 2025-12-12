@@ -1,0 +1,44 @@
+.lotto-ball-1, .lotto-ball-2, .lotto-ball-3, .lotto-ball-4, .lotto-ball-5 {
+                width: auto;
+                margin: 0px;
+                font-size: 4rem;
+                border-radius: 0%;
+            }
+            .lotto-ball-1 {
+                color: #fbc400;
+            }
+            .lotto-ball-2 {
+                color: #69c8f2;
+            }
+            .lotto-ball-3 {
+                color: #ff7272;
+            }
+            .lotto-ball-4 {
+                color: #767676;
+            }
+            .lotto-ball-5 {
+                color: #b0d840;
+            }
+            .number-color {
+                color: #d43301;
+            }
+            .child-row {
+                display: none; 
+                background-color: #f2f2f2;
+            }
+            .parent-row {
+                cursor: pointer; /* 마우스 오버 시 손가락 모양으로 변경하여 클릭 가능함을 표시 */
+            }
+
+            @media (max-width:767px) {               
+                .lotto-ball-1, .lotto-ball-2, .lotto-ball-3, .lotto-ball-4, .lotto-ball-5 {
+                        width: auto;
+                        font-size: 2rem;
+                    }
+                table {
+                
+                    .hide-on-mobile {
+                        display: none;
+                    }
+                }
+            }
