@@ -48,4 +48,11 @@
             display: none;
         }
     }
+    .lotto-num {
+        width: auto;
+        font-weight: 700;
+        margin: 2px;
+        font-size: 1.5rem;
+        border-radius: 0%;
+    }
 }
