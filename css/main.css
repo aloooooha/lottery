@@ -1,0 +1,51 @@
+.lotto-num {
+    width: auto;
+    font-weight: 700;
+    margin: 0px;
+    font-size: 3rem;
+    border-radius: 0%;
+}
+.lotto-num-range-1 {
+    color: #fbc400;
+}
+.lotto-num-range-2 {
+    color: #69c8f2;
+}
+.lotto-num-range-3 {
+    color: #ff7272;
+}
+.lotto-num-range-4 {
+    color: #767676;
+}
+.lotto-num-range-5 {
+    color: #b0d840;
+}
+.number-color {
+    color: #d43301;
+}
+.child-row {
+    display: none; 
+    background-color: #f2f2f2;
+}
+.parent-row {
+    cursor: pointer; /* 마우스 오버 시 손가락 모양으로 변경하여 클릭 가능함을 표시 */
+}
+
+.year-num {
+    width: auto;
+    font-weight: 400;    
+    font-size: 2rem;
+}
+
+@media (max-width:767px) {               
+    .lotto-num {
+            width: auto;
+            font-size: 2rem;
+        }
+    table {
+    
+        .hide-on-mobile {
+            display: none;
+        }
+    }
+}
