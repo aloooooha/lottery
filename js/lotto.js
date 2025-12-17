@@ -61,7 +61,18 @@ for (let i=1 ; i<=1201 ; i++) {
 new DataTable('#example', {
     columns: [
         { title: 'No' },
-        { title: '게임 회차 바로가기' },        
+        { title: '게임 회차 바로가기' },
+        {
+            data: 'displayedColumnName',
+            render: function (data, type, row, meta) {
+                if (type === 'display') {
+                    // 'data' is the value of the current cell
+                    // 'row' is the full data object for the current row
+                    return '<a href="/https://lottokay/lotto/game/' + row.id + '">' + data + '</a>';
+                }
+                return data;
+            }
+        }        
     ],
     columnDefs: [{
         target: 0,
