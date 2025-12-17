@@ -60,7 +60,7 @@ for (let i=1 ; i<=1201 ; i++) {
 new DataTable('#example', {
     columns: [
         { title: 'No' },
-        { title: '게임 회차'},
+        // { title: '게임 회차'},
         {
             title: '바로가기',
             render: function (data, type, row, meta) {
