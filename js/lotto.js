@@ -31,3 +31,26 @@ function updateSubCategory() {
         });
     }
 }
+
+
+function changeDepth1() {
+
+    depth2Range = [[1, 100], [101, 200], [201, 300], [301,400], [401,500],
+                [501,600], [601, 700], [701, 800], [801,900], [901,1000],
+                [1001,1100], [1101, 1200], [1201, 1202]];
+
+    var depth1Select = document.getElementById("depth1");
+    var depth2Select = document.getElementById("depth2");
+
+    for(let i=0 ; i<depth2Select.options.length ; i++) {
+        depth2Select.remove(i);
+    }
+
+    var depth1Value = depth1Select[depth1Select.selectedIndex].value;
+    
+
+    for (let i=depth2Range[depth1Value][0] ; i<= depth2Range[depth1Value][1] ; i++) {
+        //depth2Select.add(new Option(i, i+"회차"));
+    }
+
+}
